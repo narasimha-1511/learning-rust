@@ -14,6 +14,16 @@ impl Rect {
         2 *( self.width + self.height)
     }
 
+    // there is no self here if you observe
+    /*
+     * as static functions are only attached to the class
+     * we cannot call these functions on the object similary 
+     * do you understand ... this is a really good way for you tyo revisse in the future
+     */
+    fn debug() -> i32 {
+        return 1
+    }
+
 }
 
 
@@ -24,5 +34,6 @@ fn main(){
         height: 2,
     };
 
-   println!("area is {} \n permieter is {}" , rect1.area() , rect1.perimeter()) 
+   println!("area is {} \n permieter is {}" , rect1.area() , rect1.perimeter());
+   println!("running debug {}" , Rect::debug())
 }
