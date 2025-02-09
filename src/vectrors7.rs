@@ -12,7 +12,7 @@ fn _main(){
     vec.push(1);
 
     ///easier way to do this 
-    // let mut vec = Vec![1,2,3];
+    // let mut vec = vec![1,2,3];
 
     even_filter(&mut vec);
 
